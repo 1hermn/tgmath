@@ -28,7 +28,7 @@ const menu = new Scenes.WizardScene(
                 ctx.session.user.digitsNum1 = info[0]
                 ctx.session.user.digitsNum2 = info[1]
                 try {
-                    return ctx.scene.enter("div")
+                    await ctx.scene.enter("div")
                 }catch (e) {
                     ctx.reply("Будет добавлено в следующем обновлении")
                 }
